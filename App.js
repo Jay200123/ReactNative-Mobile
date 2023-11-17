@@ -1,20 +1,38 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { 
+  Text,
+  View,
+  Image,
+  ImageBackground,
+  ScrollView
+ } from 'react-native';
+
+ import {
+  Navbar,
+  ViewsText,
+  ImageViews
+ } from "./components";
+
+ const bgImg = require("./assets/dragon_img.jpg");
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <>
+    <View style={
+      {
+        flex:1,
+        marginTop:30,
+        backgroundColor:"#D3D3D3"
+      }
+    }>
+      <ScrollView>
+         {/* components here */}
+         <Navbar/>
+        <ViewsText/>
+        <ImageViews/>
+      </ScrollView>
     </View>
+    </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
