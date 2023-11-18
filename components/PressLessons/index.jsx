@@ -132,7 +132,7 @@ export default function () {
                         }
                     }
                     >
-                        Press Me for Five Seconds!
+                        Press Me for a Second!
                     </Text>
                 </Pressable>
             </View>

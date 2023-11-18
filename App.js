@@ -10,7 +10,8 @@ import {
   Navbar,
   ViewsText,
   ImageViews,
-  ButtonView
+  ButtonView,
+  ModalLessons
  } from "./components";
 
  const bgImg = require("./assets/dragon_img.jpg");
@@ -29,12 +30,16 @@ export default function App() {
          {/* components here */}
          <Navbar/>
 
+         {/* Images & Text Lessons */}
         {/* <ViewsText/>
         <ImageViews/> */}
 
-        <ButtonView/>
+        {/* event handler lessons */}
+        {/* <ButtonView/> */}
 
-
+        {/* modal lessons  */}
+        <ModalLessons/>
+        
       </ScrollView>
     </View>
     </>
