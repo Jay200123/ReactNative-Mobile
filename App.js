@@ -9,7 +9,8 @@ import {
  import {
   Navbar,
   ViewsText,
-  ImageViews
+  ImageViews,
+  ButtonView
  } from "./components";
 
  const bgImg = require("./assets/dragon_img.jpg");
@@ -27,8 +28,13 @@ export default function App() {
       <ScrollView>
          {/* components here */}
          <Navbar/>
-        <ViewsText/>
-        <ImageViews/>
+
+        {/* <ViewsText/>
+        <ImageViews/> */}
+
+        <ButtonView/>
+
+
       </ScrollView>
     </View>
     </>
