@@ -4,7 +4,6 @@ import {
     Text,
     Image
 } from "react-native";
-
 const reactLogo = require("../../assets/react-logo.png");
 
 export default function () {
@@ -16,7 +15,7 @@ export default function () {
                 width:'100%',
                 backgroundColor:"black",
                 alignItems:"center",
-                flexDirection:"row"
+                flexDirection:"row",
             }
         }>
             <Image
@@ -39,7 +38,7 @@ export default function () {
                     fontSize:15,
                 }
             }>
-                React Native Tutorial
+                Mobile App
             </Text>
         </View>
         </>

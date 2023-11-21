@@ -11,7 +11,7 @@ import {
 } from "react-native";
 
 export default function () {
-    const[modal, setModal] = useState(true);
+    const[modal, setModal] = useState(false);
 
     const toogle = () =>{
         setModal(oldModal => !oldModal);
