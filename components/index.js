@@ -5,6 +5,7 @@ import ButtonView from "./PressLessons";
 import ModalLessons from "./ModalLessons";
 import HomeContent from "./HomeContent";
 import Footer from "./Footer";
+import BoxModelLessons from "./BoxModelLessons";
 
 export {
     Navbar,
@@ -13,6 +14,7 @@ export {
     ButtonView,
     ModalLessons,
     HomeContent,
-    Footer
+    Footer,
+    BoxModelLessons
     
 }

@@ -22,7 +22,9 @@ import {
   ButtonView,
   ModalLessons,
   StatusBarLessons,
-  Footer
+  Footer,
+  BoxModelLessons
+
  } from "./components";
 
  import {
@@ -30,15 +32,17 @@ import {
   Profile
  } from "./screens";
 
- const bgImg = require("./assets/dragon_img.jpg");
+
+
+ const bgImg = require("./assets/dark-bg.jpg");
 
 export default function App() {
 
-  const[modal, setModal] = useState(false);
+  // const[modal, setModal] = useState(false);
 
-  const toogle = () => {
-    setModal(newModal=>!newModal);
-  };
+  // const toogle = () => {
+  //   setModal(newModal=>!newModal);
+  // };
 
   return (
     <>
@@ -56,8 +60,8 @@ export default function App() {
       />
       <ScrollView>
          {/* components here */}
-         {/* <Navbar/> */}
-
+         <Navbar/>
+         <BoxModelLessons/>
          {/* Images & Text Lessons */}
         {/* <ViewsText/>
         <ImageViews/> */}
@@ -68,13 +72,12 @@ export default function App() {
         {/* modal lessons  */}
         {/* <ModalLessons/> */}
 
-        <Navbar/>
         {/* <ActivityIndicator
         size="medium"
         color="black"
         /> */}
 
-        <Home/>
+        {/* <Home/>
         <Button
         title="About the Developer"
         onPress={toogle}
@@ -87,7 +90,26 @@ export default function App() {
            press={()=>toogle()}
            />
         </Modal>
-        <Footer/>
+        <Footer/> */}
+
+        {/* <View
+        style={styles.container}
+        >
+          <ImageBackground
+          style={
+            {
+              flex:1
+            }
+          }
+          source={bgImg}
+          >
+            <Text
+            style={styles.headers}
+            >
+           Facts about React Native
+          </Text>
+          </ImageBackground>
+        </View> */}
       </ScrollView>
     </View>
     </>
