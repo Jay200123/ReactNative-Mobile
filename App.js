@@ -49,8 +49,8 @@ export default function App() {
     <View style={
       {
         flex:1,
-        // backgroundColor:"#D3D3D3"
-        backgroundColor:"white",
+        backgroundColor:"plum",
+        // backgroundColor:"white",
       }
     }>
         <StatusBar

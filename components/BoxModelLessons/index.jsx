@@ -11,13 +11,41 @@ export default function () {
         style={styles.container}
         >
             <View
-            style={[styles.box, styles.dbContainer]}>
-            <Text>
+            style={
+                [styles.box, styles.darkbgContainer]
+            }
+            >
+                <Text
+                style={
+                    styles.boxText
+                }
+                >
+                    Style Inheritance Lessons
+                    <Text
+                    style={
+                        {
+                            fontWeight:'900'
+                        }
+                    }
+                    >
+                        This is a bold text
+                    </Text>
+                </Text>
+            </View>
+            <View
+            style={
+                [styles.box, styles.dbContainer, styles.boxShadow1]
+                }>
+            <Text
+            style={styles.boxText}
+            >
                 This is a Dark Blue Box
             </Text>
             </View>
             <View
-            style={[styles.box, styles.lgContainer]}>
+            style={
+                [styles.box, styles.lgContainer, styles.boxShadow]
+                }>
             <Text>
                 This is a LightGreen Box 
             </Text>
@@ -29,20 +57,44 @@ export default function () {
 
 const styles = StyleSheet.create({
     container:{
-        flex:1,
-        padding:60,
-        backgroundColor:'plum'
+        paddingHorizontal:60,
+        paddingVertical:30,
     },
     box:{
-        height:100,
-        width:100,
-        padding:60
+        height:250,
+        width:250,
+        // padding:10
+        paddingHorizontal:60,
+        paddingVertical:100,
+        marginHorizontal:10,
+        marginVertical:10,
+        borderWidth:1,
+        borderColor:"white",
+        borderRadius:5
+    },
+    darkbgContainer:{
+        backgroundColor:"black"
     },
     dbContainer:{
         backgroundColor:"darkblue"
     },
     lgContainer:{
         backgroundColor:'lightgreen'
+    },
+    boxText:{
+        color:"white"
+    },
+    boxShadow:{
+        elevation:10
+    },
+    boxShadow1:{ //this style props only works in IOS
+        shadowColor:"grey",
+        shadowOffset:{
+            width:6,
+            height:6
+        },
+        shadowOpacity: 0.6,
+        shadowRadius:4   
     }
 
 })
