@@ -5,6 +5,7 @@ import {
     Image
 } from "react-native";
 const reactLogo = require("../../assets/react-logo.png");
+const menuLogo = require("../../assets/menu.png");
 
 export default function () {
     return (
@@ -13,7 +14,7 @@ export default function () {
             {
                 height:50,
                 width:'100%',
-                backgroundColor:"black",
+                backgroundColor:"transparent",
                 alignItems:"center",
                 flexDirection:"row",
             }
@@ -29,17 +30,38 @@ export default function () {
             }
             source={reactLogo}
             />
-
+            <View
+            style={
+                {
+                    flexDirection:'row',
+                    width:'100%',
+                    flexWrap:'wrap',
+                    alignItems:"center",
+                    justifyContent:'space-between'
+                }
+            }
+            >
             <Text
             style={
                 {
-                    color:"white",
+                    color:"black",
                     margin:5,
                     fontSize:15,
                 }
             }>
                 Mobile App
             </Text>
+            <Image
+            source={menuLogo}
+            style={
+                {
+                    height:20,
+                    width:20,
+                    marginRight:55
+                }
+            }
+            />
+            </View>
         </View>
         </>
     )
